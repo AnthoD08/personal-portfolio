@@ -33,6 +33,7 @@ const Projects = () => {
       >
         Mes Projets
       </motion.h2>
+
       <motion.div
         className="project-grid"
         variants={staggerContainer}
@@ -40,17 +41,21 @@ const Projects = () => {
         whileInView="animate"
         viewport={{ once: true }}
       >
-        <motion.div
-          className="project-card"
+        {/* AI SaaS Project */}
+        <motion.a
+          href="https://todo-list-blond-two-40.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-card no-underline text-inherit"
           variants={fadeInUp}
           whileHover={{ y: -10, transition: { duration: 0.2 } }}
         >
           <motion.div
             className="project-image"
-            style={{ backgroundImage: "url('/projects/ai-saas.png')" }}
+            style={{ backgroundImage: "url('/projects/todolist.png')" }}
             whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
           />
-          <h3> AI SaaS Platform</h3>
+          <h3>Todo List</h3>
           <p>
             A modern SaaS platform built with Next.js and OpenAI integration,
             featuring real-time AI-powered content generation and analytics.
@@ -60,57 +65,58 @@ const Projects = () => {
             <span>OpenAI</span>
             <span>TailwindCSS</span>
           </div>
-        </motion.div>
+        </motion.a>
 
-        <motion.div
-          className="project-card"
+        {/* Social Media Dashboard */}
+        <motion.a
+          href="https://todo-list-blond-two-40.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-card no-underline text-inherit"
           variants={fadeInUp}
           whileHover={{ y: -10, transition: { duration: 0.2 } }}
         >
           <motion.div
             className="project-image"
-            style={{
-              backgroundImage: "url('/projects/social-media.png')",
-            }}
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.2 }}
+            style={{ backgroundImage: "url('/projects/todolist.png')" }}
+            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
           />
-          <h3>Social Media Dashboard</h3>
+          <h3>Todo List</h3>
           <p>
-            A comprehensive social media management dashboard with analytics,
-            scheduling, and engagement tracking features.
+            A modern SaaS platform built with Next.js and OpenAI integration,
+            featuring real-time AI-powered content generation and analytics.
           </p>
           <div className="project-tech">
-            <span>React</span>
-            <span>Node.js</span>
-            <span>MongoDB</span>
-          </div>
-        </motion.div>
-
-        <motion.div
-          className="project-card"
-          variants={fadeInUp}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
-        >
-          <motion.div
-            className="project-image"
-            style={{
-              backgroundImage: "url('/projects/stopwatch.png')",
-            }}
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.2 }}
-          />
-          <h3>Productivity Timer</h3>
-          <p>
-            A sleek productivity timer application with customizable work
-            sessions, statistics tracking, and dark mode support.
-          </p>
-          <div className="project-tech">
-            <span>React</span>
-            <span>TypeScript</span>
+            <span>Next.js</span>
+            <span>OpenAI</span>
             <span>TailwindCSS</span>
           </div>
-        </motion.div>
+        </motion.a>
+        {/* Productivity Timer */}
+        <motion.a
+          href="https://todo-list-blond-two-40.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-card no-underline text-inherit"
+          variants={fadeInUp}
+          whileHover={{ y: -10, transition: { duration: 0.2 } }}
+        >
+          <motion.div
+            className="project-image"
+            style={{ backgroundImage: "url('/projects/todolist.png')" }}
+            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+          />
+          <h3>Todo List</h3>
+          <p>
+            A modern SaaS platform built with Next.js and OpenAI integration,
+            featuring real-time AI-powered content generation and analytics.
+          </p>
+          <div className="project-tech">
+            <span>Next.js</span>
+            <span>OpenAI</span>
+            <span>TailwindCSS</span>
+          </div>
+        </motion.a>
       </motion.div>
     </motion.section>
   );
