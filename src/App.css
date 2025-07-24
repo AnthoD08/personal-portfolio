@@ -163,6 +163,7 @@ body {
 .hero-description {
   font-size: 1.1rem;
   margin-bottom: 2rem;
+  text-align: justify;
   line-height: 1.7;
 }
 

@@ -31,7 +31,7 @@ function App() {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <p> &copy; 2025 Anthony. Tous droits réservés.</p>
+        <p> &copy; 2025 Anthony Delmotte. Tous droits réservés.</p>
       </motion.footer>
     </div>
   );

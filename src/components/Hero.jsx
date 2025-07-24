@@ -44,12 +44,13 @@ const Hero = () => {
             Anthony
           </motion.h1>
           <motion.h2 className="hero-subtitle" variants={fadeInUp}>
-           Développeur web
+            Développeur web
           </motion.h2>
           <motion.p className="hero-description" variants={fadeInUp}>
-            I craft digital experiences that combine design with powerful
-            functionality. Specializing in modern web applications and
-            interactive user interfaces.
+            Développeur front-end junior passionné par React et le design
+            d’interfaces modernes. Je cherche aujourd’hui à intégrer une
+            première équipe pour mettre mes compétences en pratique, apprendre
+            davantage, et contribuer activement à des projets web.
           </motion.p>
           <motion.div className="cta-buttons" variants={stagger}>
             <motion.a
@@ -90,23 +91,21 @@ const Hero = () => {
               }}
               style={vscDarkPlus}
             >
-              {`const aboutMe: DeveloperProfile = {
-  codename: "PedroTech",
-  origin: "🌍 Somewhere between a coffee shop and a terminal",
-  role: "Fullstack Web Sorcerer",
-  stack: {
-    languages: ["JavaScript", "TypeScript", "SQL"],
-    frameworks: ["React", "Next.js", "TailwindCSS", "Supabase"],
-  },
-  traits: [
-    "pixel-perfectionist",
-    "API whisperer",
-    "dark mode advocate",
-    "terminal aesthetic enthusiast",
+              {`const anthony: DeveloppeurFrontEnd = {
+  nom: "Anthony Delmotte",
+  localisation: "📍 France",
+  poste: "Développeur Front-End React",
+  technologies: ["React", "JavaScript", "HTML", "CSS", "TailwindCSS"],
+  outils: ["Vite", "Git", "Figma", "Framer Motion"],
+  langues: ["Français", "Anglais"],
+  valeurs: [
+    "Code propre",
+    "Expérience utilisateur intuitive",
+    "Esprit d'équipe",
+    "Curiosité technologique"
   ],
-  missionStatement:
-    "Turning ideas into interfaces and bugs into feature",
-  availability: "Available for hire",
+  disponibilite: "Immédiate",
+  enRecherche: true,
 };`}
             </SyntaxHighlighter>
           </div>
